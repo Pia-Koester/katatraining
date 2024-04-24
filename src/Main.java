@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,8 +15,8 @@ public class Main {
         System.out.println("kata1: " + result1);
 
         //To test Kata 3 - double array
-        int[] resultArray = map(new int[] {1, 2, 3});
-        System.out.println(resultArray);
+        int[] resultArray = map(new int[] {9, 7, 3});
+        System.out.println(Arrays.toString(resultArray));
     }
 
     // https://www.codewars.com/kata/57cc975ed542d3148f00015b
