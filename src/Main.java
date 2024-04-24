@@ -17,6 +17,10 @@ public class Main {
         //To test Kata 3 - double array
         int[] resultArray = map(new int[] {9, 7, 3});
         System.out.println(Arrays.toString(resultArray));
+
+        //To test Kata 4 - removing spaces
+        String result4 = noSpace("8 j 8   mBliB8g  imjB8B8  jl  B");
+        System.out.println(result4);
     }
 
     // https://www.codewars.com/kata/57cc975ed542d3148f00015b
@@ -28,10 +32,10 @@ public class Main {
     public static boolean check(Object[] a, Object x) {
         boolean found = false;
         for (Object item : a){
-            if( item == x){found = true; break;};
+            if( item == x){found = true; break;}
         }
         return found;
-    };
+    }
 
 
     //https://www.codewars.com/kata/5aa736a455f906981800360d/train/java
@@ -58,6 +62,20 @@ public class Main {
             newArray[i] = arr[i] *2;
         }
         return newArray;
+    }
+    //https://www.codewars.com/kata/57eae20f5500ad98e50002c5/java
+    //Write a function that removes the spaces from the string, then return the resultant string.
+
+    public static String noSpace( String x) {
+        String noSpace ="";
+        char[] ch = x.toCharArray();
+
+        for (int i = 0; i< ch.length; i++){
+            if ( ch[i] != ' ') { noSpace = noSpace.concat(String.valueOf(ch[i]));}
+
+        }
+
+        return noSpace;
     }
 
 }
