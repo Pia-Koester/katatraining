@@ -1,5 +1,7 @@
 import java.util.Arrays;
 
+
+
 public class Main {
     public static void main(String[] args) {
 
@@ -19,7 +21,7 @@ public class Main {
         System.out.println(Arrays.toString(resultArray));
 
         //To test Kata 4 - removing spaces
-        String result4 = noSpace("8 j 8   mBliB8g  imjB8B8  jl  B");
+        String result4 = Space.noSpace("8 j 8   mBliB8g  imjB8B8  jl  B");
         System.out.println(result4);
     }
 
@@ -63,19 +65,6 @@ public class Main {
         }
         return newArray;
     }
-    //https://www.codewars.com/kata/57eae20f5500ad98e50002c5/java
-    //Write a function that removes the spaces from the string, then return the resultant string.
 
-    public static String noSpace( String x) {
-        String noSpace ="";
-        char[] ch = x.toCharArray();
-
-        for (int i = 0; i< ch.length; i++){
-            if ( ch[i] != ' ') { noSpace = noSpace.concat(String.valueOf(ch[i]));}
-
-        }
-
-        return noSpace;
-    }
 
 }
