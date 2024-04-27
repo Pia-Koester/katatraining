@@ -26,6 +26,10 @@ public class Main {
         //to test Kata 5 - traffic lights
         String result5 = TrafficLights.updateLight("green");
         System.out.println("Kata 5 "+ result5);
+
+        //to test Kata 6 - sum of positive values of an array
+        int result6 = Positive.sum(new int[]{1,-4,7,12});
+        System.out.println("Kata 6 "+ result6);
     }
 
 
