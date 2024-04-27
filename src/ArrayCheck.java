@@ -8,8 +8,11 @@ public class ArrayCheck {
 
     public static boolean check(Object[] a, Object x) {
         boolean found = false;
-        for (Object item : a){
-            if( item == x){found = true; break;}
+        for (Object item : a) {
+            if (item == x) {
+                found = true;
+                break;
+            }
         }
         return found;
     }
